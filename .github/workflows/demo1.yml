@@ -16,5 +16,5 @@ name: CI
 
 jobs:
   call-shared-workflow:
-    uses: salary-api/.github/workflows/main.yml@main
+    uses: gautam8p/salary-api/.github/workflows/main.yml@main
 
