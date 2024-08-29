@@ -1,9 +1,20 @@
-name: hello-world
-on: push
+# name: hello-world
+# on: push
+# jobs:
+#   my-job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: my-step
+#         run: echo "Hello Opstree"
+
+name: CI
+
+'on':
+    push:
+      branches:
+        - main
+
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: my-step
-        run: echo "Hello Opstree"
+  call-shared-workflow:
+    uses: salary-api/.github/workflows/main.yml@main
 
